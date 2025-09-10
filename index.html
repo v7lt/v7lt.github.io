@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>velt's portfolio</title>
-  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+  <title>velt - Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -13,18 +15,21 @@
     html {
       scroll-behavior: smooth;
     }
-
     .overlay {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0,0,0,0.5);
       position: absolute;
       inset: 0;
       z-index: 0;
     }
+    /* Adjust sections for sticky navbar */
+    section {
+      scroll-margin-top: 80px; /* navbar height */
+    }
   </style>
 </head>
-<body class="text-white font-sans relative">
+<body class="relative text-white font-sans">
 
-  <!-- Video background -->
+  <!-- Video Background -->
   <video autoplay muted loop playsinline class="fixed top-0 left-0 w-full h-full object-cover z-[-1]">
     <source src="silence-of-the-ronin.1920x1080.mp4" type="video/mp4">
     Your browser does not support the video tag.
@@ -44,83 +49,64 @@
 
   <!-- Hero Section -->
   <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center p-6 relative z-10" data-aos="fade-up">
-    <h1 class="text-5xl font-bold">Hi, I'm velt </h1>
+    <h1 class="text-5xl font-bold">Hi, I'm velt 👋</h1>
     <p class="mt-4 text-lg text-gray-100 max-w-xl">
-      8 years of experience, specialized in moderation/management and game/web translation for over 2 years now.
+      Hey, I'm velt. 8 years of experience, specialized in moderation/management and game/web translator for over 2 years now.
     </p>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="min-h-screen pt-24 max-w-5xl mx-auto p-6 relative z-10" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-8 text-center">Projects & Roles</h2>
-    
     <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
       <div class="bg-blue-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">ArchMC</h3>
         <p class="text-blue-100 mt-1">Moderator</p>
       </div>
-
-    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-      <div class="bg-blue-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
-        <h3 class="text-xl font-bold">Feather Client</h3>
-        <p class="text-green-100 mt-1">Translator</p>
-      </div>
-      
       <div class="bg-purple-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">Viper Studios</h3>
         <p class="text-purple-100 mt-1">Former Manager</p>
       </div>
-
       <div class="bg-red-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">Moffy Studios</h3>
         <p class="text-red-100 mt-1">Former Administrator</p>
       </div>
-
       <div class="bg-yellow-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">G RBLX Games & GX Studios</h3>
         <p class="text-yellow-100 mt-1">Former Game Moderator & Tester</p>
       </div>
-
       <div class="bg-blue-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">Salwyrr Client</h3>
         <p class="text-blue-100 mt-1">Former Helper</p>
       </div>
-
       <div class="bg-blue-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">Ramen House</h3>
         <p class="text-blue-100 mt-1">Former Moderator</p>
       </div>
-
       <div class="bg-blue-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">Rede Abstract</h3>
         <p class="text-blue-100 mt-1">Former Moderator</p>
       </div>
-
       <div class="bg-purple-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">Hypixel Housing (Mineman's Club)</h3>
         <p class="text-purple-100 mt-1">Former Head Staff</p>
       </div>
-
       <div class="bg-blue-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">TavernMC</h3>
         <p class="text-blue-100 mt-1">Former Helper</p>
       </div>
-
       <div class="bg-blue-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">Splashy's Studio</h3>
         <p class="text-blue-100 mt-1">Former Moderator</p>
       </div>
-
       <div class="bg-green-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">Plantaria</h3>
         <p class="text-green-100 mt-1">Former Translator</p>
       </div>
-
       <div class="bg-green-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">ebio.gg</h3>
         <p class="text-green-100 mt-1">Former Translator</p>
       </div>
-
       <div class="bg-red-600/20 backdrop-blur-sm p-4 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
         <h3 class="text-xl font-bold">inject.bio</h3>
         <p class="text-red-100 mt-1">Former Head Moderator</p>
@@ -132,13 +118,11 @@
   <section id="contact" class="min-h-screen text-center pt-24 relative z-10" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-8">Contact Me</h2>
     <div class="max-w-md mx-auto grid gap-6 sm:grid-cols-2">
-      <!-- Discord Card -->
-      <div class="bg-indigo-600/20 backdrop-blur-sm p-6 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center">
+      <div class="bg-indigo-600/20 backdrop-blur-sm p-6 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 flex flex-col items-center justify-center">
         <h3 class="text-xl font-bold mb-2">Discord</h3>
         <a href="https://discord.com/users/221025167684403202" target="_blank" class="text-indigo-100 hover:text-white font-semibold">v7lt</a>
       </div>
-      <!-- Instagram Card -->
-      <div class="bg-pink-600/20 backdrop-blur-sm p-6 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center">
+      <div class="bg-pink-600/20 backdrop-blur-sm p-6 rounded-xl shadow-md transform transition-transform duration-300 hover:-translate-y-2 flex flex-col items-center justify-center">
         <h3 class="text-xl font-bold mb-2">Instagram</h3>
         <a href="https://instagram.com/fuckindreamer" target="_blank" class="text-pink-100 hover:text-white font-semibold">@fuckindreamer</a>
       </div>
@@ -157,6 +141,5 @@
       once: true,
     });
   </script>
-
 </body>
 </html>
