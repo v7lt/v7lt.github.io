@@ -3,166 +3,203 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>velt's portfolio</title>
+  <title>velt | portfolio</title>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- AOS CSS -->
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
+
+    section { scroll-margin-top: 96px; }
+
     .overlay {
-      background-color: rgba(0,0,0,0.5);
-      position: absolute;
+      background: rgba(0,0,0,0.55);
+      position: fixed;
       inset: 0;
-      z-index: 0;
-    }
-    section {
-      scroll-margin-top: 80px; /* navbar height */
+      z-index: -1;
     }
   </style>
 </head>
+
 <body class="relative text-white font-sans">
 
   <!-- Video Background -->
-  <video autoplay muted loop playsinline class="fixed top-0 left-0 w-full h-full object-cover z-[-1]">
+  <video autoplay muted loop playsinline
+    class="fixed inset-0 w-full h-full object-cover -z-20">
     <source src="videoplayback_Trim.mp4" type="video/mp4">
-    Your browser does not support the video tag.
   </video>
 
-  <!-- Overlay -->
+  <!-- Dark Overlay -->
   <div class="overlay"></div>
 
-  <!-- Sticky Navbar -->
-  <nav class="fixed top-0 left-0 w-full bg-black/40 backdrop-blur-sm z-20 py-4">
-    <div class="max-w-5xl mx-auto flex justify-center space-x-8">
-      <a href="#hero" class="hover:text-blue-300 transition-colors">Home</a>
-      <a href="#projects" class="hover:text-blue-300 transition-colors">Projects</a>
-      <a href="#contact" class="hover:text-blue-300 transition-colors">Contact</a>
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 w-full bg-black/40 backdrop-blur-md z-20">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-center gap-10 text-sm tracking-wide">
+      <a href="#home" class="hover:text-blue-300 transition">Home</a>
+      <a href="#projects" class="hover:text-blue-300 transition">Projects</a>
+      <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center p-6 relative z-10" data-aos="fade-up">
-    <h1 class="text-5xl font-bold mb-2">Hey, I'm velt </h1>
-    <div class="w-16 h-1 bg-blue-400 mx-auto rounded mt-2 mb-4"></div>
-    <p class="mt-4 text-lg text-gray-100 max-w-2xl mx-auto">
-      8 years of experience, specialized in moderation/management and game/web translation for over 2 years now.
-    </p>
+  <!-- HERO -->
+  <section id="home"
+    class="min-h-screen flex items-center justify-center text-center px-6"
+    data-aos="fade-up">
+
+    <div class="max-w-2xl">
+      <h1 class="text-5xl sm:text-6xl font-bold mb-4">
+        Hey, I’m <span class="text-blue-400">velt</span>
+      </h1>
+
+      <p class="text-gray-200 text-lg leading-relaxed">
+        8 years of experience, specialized in moderation, management,
+        and game / web translation for over 2 years.
+      </p>
+    </div>
+
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="min-h-screen pt-24 max-w-6xl mx-auto p-6 relative z-10" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold mb-12 text-center">Projects</h2>
+  <!-- PROJECTS -->
+  <section id="projects"
+    class="max-w-7xl mx-auto px-6 pt-32 pb-24">
 
-    <!-- Group 1 -->
-    <div class="mb-16">
-      <div class="w-full h-1 bg-blue-500/40 rounded mb-6"></div>
+    <h2 class="text-3xl font-semibold text-center mb-16" data-aos="fade-up">
+      Projects & Experience
+    </h2>
+
+    <!-- CURRENT PROJECTS -->
+    <div class="mb-20" data-aos="fade-up">
+      <h3 class="text-xl font-semibold mb-6 text-blue-300">
+        Current Projects
+      </h3>
+
       <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-        <div class="bg-gradient-to-br from-blue-600/30 to-blue-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="100">
-          <h4 class="text-xl font-bold">ArchMC</h4><p class="text-gray-200 mt-1">Senior Moderator</p>
-        </div>
-        <div class="bg-gradient-to-br from-blue-600/30 to-blue-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="200">
-          <h4 class="text-xl font-bold">Ramen House</h4><p class="text-gray-200 mt-1">Former Moderator</p>
-        </div>
-        <div class="bg-gradient-to-br from-blue-600/30 to-blue-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="300">
-          <h4 class="text-xl font-bold">Rede Abstract</h4><p class="text-gray-200 mt-1">Former Moderator</p>
-        </div>
-        <div class="bg-gradient-to-br from-blue-600/30 to-blue-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="400">
-          <h4 class="text-xl font-bold">TavernMC</h4><p class="text-gray-200 mt-1">Former Helper</p>
-        </div>
-        <div class="bg-gradient-to-br from-blue-600/30 to-blue-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="500">
-          <h4 class="text-xl font-bold">Splashy's Studio</h4><p class="text-gray-200 mt-1">Former Moderator</p>
-        </div>
-        <div class="bg-gradient-to-br from-purple-600/30 to-purple-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="600">
-          <h4 class="text-xl font-bold">Hypixel Housing (Mineman's Club)</h4><p class="text-gray-200 mt-1">Former Head Staff</p>
-        </div>
-        <div class="bg-gradient-to-br from-yellow-600/30 to-yellow-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="700">
-          <h4 class="text-xl font-bold">G RBLX Games & GX Studios</h4><p class="text-gray-200 mt-1">Former Game Moderator & Tester</p>
-        </div>
-        <div class="bg-gradient-to-br from-blue-600/30 to-blue-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="800">
-          <h4 class="text-xl font-bold">Salwyrr Client</h4><p class="text-gray-200 mt-1">Former Helper</p>
-        </div>
-        <div class="bg-gradient-to-br from-red-600/30 to-red-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="900">
-          <h4 class="text-xl font-bold">inject.bio</h4><p class="text-gray-200 mt-1">Former Head Moderator</p>
+        <div class="bg-blue-500/10 border border-blue-400/20 rounded-xl p-6 hover:-translate-y-1 transition">
+          <h4 class="font-semibold text-lg">ArchMC</h4>
+          <p class="text-gray-300 text-sm mt-1">Senior Moderator</p>
         </div>
       </div>
     </div>
 
-    <!-- Group 2 -->
-    <div class="mb-16">
-      <div class="w-full h-1 bg-purple-500/40 rounded mb-6"></div>
-      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-        <div class="bg-gradient-to-br from-purple-600/30 to-purple-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="100">
-          <h4 class="text-xl font-bold">Viper Studios</h4><p class="text-gray-200 mt-1">Former Manager</p>
-        </div>
-        <div class="bg-gradient-to-br from-red-600/30 to-red-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="200">
-          <h4 class="text-xl font-bold">Moffty Studios</h4><p class="text-gray-200 mt-1">Former Administrator</p>
-        </div>
-      </div>
-    </div>
+    <!-- PAST PROJECTS -->
+    <div data-aos="fade-up">
+      <h3 class="text-xl font-semibold mb-6 text-purple-300">
+        Past Projects
+      </h3>
 
-    <!-- Group 3 -->
-    <div>
-      <div class="w-full h-1 bg-green-500/40 rounded mb-6"></div>
       <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-        <div class="bg-gradient-to-br from-green-600/30 to-green-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="100">
-          <h4 class="text-xl font-bold">Plantaria</h4><p class="text-gray-200 mt-1">Former Translator</p>
+
+        <!-- Moderation / Staff -->
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">Ramen House</h4>
+          <p class="text-sm text-gray-300">Former Moderator</p>
         </div>
-        <div class="bg-gradient-to-br from-green-600/30 to-green-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="200">
-          <h4 class="text-xl font-bold">ebio.gg</h4><p class="text-gray-200 mt-1">Former Translator</p>
+
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">Rede Abstract</h4>
+          <p class="text-sm text-gray-300">Former Moderator</p>
         </div>
-        <div class="bg-gradient-to-br from-teal-600/30 to-teal-500/20 p-6 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition"
-             data-aos="fade-up" data-aos-delay="300">
-          <h4 class="text-xl font-bold">Feather Client</h4><p class="text-gray-200 mt-1">Former Translator</p>
+
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">TavernMC</h4>
+          <p class="text-sm text-gray-300">Former Helper</p>
         </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">Splashy’s Studio</h4>
+          <p class="text-sm text-gray-300">Former Moderator</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">Hypixel Housing (Mineman’s Club)</h4>
+          <p class="text-sm text-gray-300">Former Head Staff</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">G RBLX Games & GX Studios</h4>
+          <p class="text-sm text-gray-300">Former Game Moderator & Tester</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">Salwyrr Client</h4>
+          <p class="text-sm text-gray-300">Former Helper</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">inject.bio</h4>
+          <p class="text-sm text-gray-300">Former Head Moderator</p>
+        </div>
+
+        <!-- Management -->
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">Viper Studios</h4>
+          <p class="text-sm text-gray-300">Former Manager</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">Moffty Studios</h4>
+          <p class="text-sm text-gray-300">Former Administrator</p>
+        </div>
+
+        <!-- Translation -->
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">Plantaria</h4>
+          <p class="text-sm text-gray-300">Former Translator</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">ebio.gg</h4>
+          <p class="text-sm text-gray-300">Former Translator</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+          <h4 class="font-semibold">Feather Client</h4>
+          <p class="text-sm text-gray-300">Former Translator</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="min-h-screen text-center pt-24 relative z-10" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold mb-8">Contact Me</h2>
-    <div class="max-w-md mx-auto grid gap-6 sm:grid-cols-2">
-      <div class="bg-gradient-to-r from-indigo-500/30 to-indigo-600/20 p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-xl transition flex flex-col items-center justify-center">
-        <h3 class="text-xl font-bold mb-2">Discord</h3>
-        <a href="https://discord.com/users/221025167684403202" target="_blank" class="text-indigo-100 hover:text-white font-semibold">v7lt</a>
-      </div>
-      <div class="bg-gradient-to-r from-pink-500/30 to-pink-600/20 p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-xl transition flex flex-col items-center justify-center">
-        <h3 class="text-xl font-bold mb-2">Instagram</h3>
-        <a href="https://instagram.com/portugu3se" target="_blank" class="text-pink-100 hover:text-white font-semibold">@portugu3se</a>
-      </div>
+  <!-- CONTACT -->
+  <section id="contact"
+    class="max-w-4xl mx-auto px-6 pb-32 text-center"
+    data-aos="fade-up">
+
+    <h2 class="text-3xl font-semibold mb-10">
+      Contact
+    </h2>
+
+    <div class="grid gap-6 sm:grid-cols-2">
+      <a href="https://discord.com/users/221025167684403202"
+         target="_blank"
+         class="border border-indigo-400/30 bg-indigo-500/10 rounded-xl p-6 hover:scale-105 transition">
+        <h3 class="font-semibold mb-1">Discord</h3>
+        <span class="text-indigo-200">v7lt</span>
+      </a>
+
+      <a href="https://instagram.com/portugu3se"
+         target="_blank"
+         class="border border-pink-400/30 bg-pink-500/10 rounded-xl p-6 hover:scale-105 transition">
+        <h3 class="font-semibold mb-1">Instagram</h3>
+        <span class="text-pink-200">@portugu3se</span>
+      </a>
     </div>
   </section>
 
-  <footer class="text-center py-6 text-gray-300 relative z-10" data-aos="fade-up">
+  <footer class="text-center py-6 text-gray-400 text-sm">
     © 2025 velt
   </footer>
 
-  <!-- AOS JS -->
+  <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
+    AOS.init({ duration: 900, once: true });
   </script>
+
 </body>
 </html>
